@@ -1,0 +1,20 @@
+.quote-card-view {
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(230, 227, 227, 0.966);
+    padding: 20px;
+  }
+  
+  .text-justify {
+    text-align: justify;
+  }
+  
+  .text-primary {
+    color: #ff0055; /* Bootstrap's primary color */
+  }
+  
+  .blockquote {
+    margin: 0;
+  }
+  
