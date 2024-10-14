@@ -57,7 +57,7 @@ function Projects() {
               Inspired by popular messaging platforms, Snap offers a rich set of features to enhance user interaction, privacy, and multimedia sharing, making it a go-to platform for casual and professional conversations.
               The Snap project aims to deliver a secure and engaging messaging experience that promotes meaningful connections among users. 
               By leveraging modern technologies and focusing on user-centric design, Snap aspires to become a reliable platform for personal and professional communication. "
-              link="https://symphonious-daifuku-31e3d0.netlify.app/"
+              link="https://snapfrontend.netlify.app/"
               />
           </Col>
         </Row>
