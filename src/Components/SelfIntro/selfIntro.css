@@ -1,0 +1,69 @@
+.home-about-section {
+    padding: 60px 0;
+    color: #333; /* Dark text for better contrast */
+    font-family: 'Poppins', sans-serif; /* Update to your preferred font */
+  }
+  
+  .background {
+    background-color: #f4f4f4; /* Soft light gray background */
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .intro-title {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    font-weight: 600; /* Slightly bold for emphasis */
+    color: #1a1a2e; /* Dark navy color for the title */
+  }
+  
+  .home-about-body {
+    font-size: 1.1em;
+    line-height: 1.6; /* Increased line height for better readability */
+    color: #555; /* A medium gray for body text */
+  }
+  
+  .avatar-image {
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+  
+  .avatar-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .home-about-social {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .social-card {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 0 10px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+    text-decoration: none;
+  }
+  
+  .social-card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .social-card span {
+    display: block;
+    margin-top: 5px;
+    font-size: 1em;
+  }
+  

@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
-    <link rel="icon" href="https://www.instagram.com/p/CFOeWOZhCdb/" />
+    <link rel="icon" href="https://example.com/favicon.ico" /> <!-- Update with a valid favicon link -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="Sangeetha Kamaraj"
-      content="Sangeetha Kamaraj Portfolio"
-    />
-   
-   
+    <meta name="theme-color" content="#ffffff" /> <!-- Change to white -->
+    <meta name="description" content="Sangeetha Kamaraj Portfolio" />
     <title>Sangeetha Kamaraj</title>
-  </head>
-  <body>
-    
-    <div id="root"></div>
-   
-  </body>
+    <style>
+        body {
+            background-color: #ffffff; /* Set background color to white */
+            margin: 0; /* Remove default margin */
+            font-family: Arial, sans-serif; /* Set a default font */
+        }
+        #root {
+            min-height: 100vh; /* Ensure the root div takes at least full height */
+            display: flex; /* Use flexbox for alignment */
+            flex-direction: column; /* Stack children vertically */
+        }
+        .content {
+            flex: 1; /* Allow content area to grow and fill space */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <!-- This is where your React app will render -->
+        <div class="content">
+            <div id="app"></div> <!-- Your app will mount here -->
+        </div>
+    </div>
+
+    <!-- Link to your JavaScript bundle -->
+    <script src="path/to/your/bundle.js"></script>
+</body>
 </html>

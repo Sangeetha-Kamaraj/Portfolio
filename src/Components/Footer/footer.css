@@ -1,40 +1,49 @@
-
 .footer {
-    background-color: rgba(16, 195, 223, 0.514);
-    bottom: 0 !important;
-    padding-top: 10px !important;
-    padding-bottom: 8px !important ;
-  }
-  .footer-copywright {
-    text-align: center !important;
-  }
-  
-  .footer-body {
-    text-align: center !important;
-  }
-  
-  @media (max-width: 767px) {
-    .footer-copywright {
-      text-align: center !important;
-    }
-  
-    .footer-body {
-      text-align: center !important;
-    }
-  }
-  
+  background-color: rgba(26, 24, 58, 0.9); /* Darker shade to match the navbar */
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
+
+.footer-copywright,
+.footer-body {
+  text-align: center;
+}
+
+.footer h3 {
+  font-size: 1em;
+  color: #f1ee50; /* Matching the hover color of navbar links */
+  margin: 0.5em 0;
+}
+
+.footer-icons {
+  margin: 0.5em 0;
+  padding: 0;
+  list-style-type: none; /* Remove bullets */
+}
+
+.footer-icons .social-icons {
+  display: inline-block;
+  margin: 0 10px; /* Space between icons */
+}
+
+.footer-icons a {
+  color: white; /* Default icon color */
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.footer-icons a:hover {
+  color: #c8ce4c; /* Slightly lighter color for hover */
+}
+
+.blockquote-footer {
+  color: #a588c0;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 767px) {
   .footer h3 {
-    font-size: 1em;
-    color: white !important;
-    margin-top: 0.5em !important;
-    margin-bottom: 0.5em !important;
+    font-size: 0.9em; /* Slightly smaller on mobile */
   }
-  .footer-icons {
-    margin-top: 0.5em !important;
-    margin-bottom: 0.5em !important;
-    padding: 0 !important;
-  }
-  
-  .blockquote-footer {
-    color: #a588c0 !important;
-  }
+}

@@ -1,20 +1,36 @@
 .quote-card-view {
-    margin: 20px auto;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(230, 227, 227, 0.966);
-    padding: 20px;
+  margin: 30px auto; /* Increased margin for spacing */
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(230, 227, 227, 0.966);
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+}
+
+.quote-card-view:hover {
+  transform: scale(1.02); /* Slightly enlarge the card */
+  box-shadow: 0 8px 16px rgba(230, 227, 227, 0.966); /* Increase shadow on hover */
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-primary {
+  color: #ff0055; /* Bootstrap's primary color */
+}
+
+.blockquote {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .quote-card-view {
+    max-width: 90%; /* Wider on smaller screens */
   }
-  
-  .text-justify {
-    text-align: justify;
-  }
-  
-  .text-primary {
-    color: #ff0055; /* Bootstrap's primary color */
-  }
-  
-  .blockquote {
-    margin: 0;
-  }
-  
+}
+
+.quote-card-view p {
+  font-size: 1.1rem; /* Larger text for readability */
+  line-height: 1.6; /* More space between lines */
+}

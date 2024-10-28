@@ -11,7 +11,10 @@ import Contact from '../Pages/Contact';
 function MainRoutes() {
   return (
     <Router>
+      {/* Header is always displayed on every page */}
       <Header />
+      
+      {/* Define the routes for the application */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
@@ -20,6 +23,8 @@ function MainRoutes() {
         <Route path="/resume" element={<Resume />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      
+      {/* Footer is always displayed on every page */}
       <Footer />
     </Router>
   );

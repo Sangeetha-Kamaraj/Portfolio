@@ -10,42 +10,27 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 function SelfIntro() {
   return (
-    <Container fluid className="home-about-section  container-fluid" id="about">
+    <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              LET ME <span className="purple">INTRODUCE</span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> React,NodeJs and JavaScript. </b>
-              </i>
+              Hello! I’m passionate about programming and have been on an exciting learning journey. 🤷‍♂️
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies  &nbsp;</b> and also passionate
-                about all things in  &nbsp;<b className="purple">developing full stack projects</b>
-              </i>
+              I have a solid foundation in technologies like <b className="purple">React, Node.js, and JavaScript</b>,
+              which I leverage to create innovative solutions.
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-             
-              &nbsp; like
-              
-                <b className="purple"> React.js and Express.js</b>
-              
+              I’m particularly interested in <b className="purple">Web Technologies</b> and thrive on developing
+              <b className="purple"> full-stack projects</b> that challenge my skills.
+              <br />
+              <br />
+              My goal is to build exceptional products using <b className="purple">Node.js</b> alongside modern frameworks
+              like <b className="purple">React.js</b> and <b className="purple">Express.js</b>.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -57,25 +42,23 @@ function SelfIntro() {
         <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
-
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
                   href="https://github.com/Sangeetha-Kamaraj"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiFillGithub />
                 </a>
               </li>
-
               <li className="social-icons">
                 <a
                   href="http://www.linkedin.com/in/sangeetha-kamaraj"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
@@ -90,8 +73,6 @@ function SelfIntro() {
                   <AiFillInstagram />
                 </a>
               </li>
-              
-                
             </ul>
           </Col>
         </Row>
@@ -99,4 +80,5 @@ function SelfIntro() {
     </Container>
   );
 }
+
 export default SelfIntro;
