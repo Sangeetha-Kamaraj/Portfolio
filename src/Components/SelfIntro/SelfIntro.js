@@ -1,12 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+
+// Update this URL to your new girl logo image
+const myImg = "https://fabulouseyebrowthreading.com/wp-content/uploads/2022/01/pp.png";
 
 function SelfIntro() {
   return (
