@@ -5,7 +5,7 @@ import { BiLinkExternal } from "react-icons/bi";
 import PropTypes from 'prop-types';
 import "./projectcards.css";
 
-function ProjectCards({ imgPath, title, description, link }) {
+function ProjectCards({ imgPath, title, description, link, skills }) {
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={imgPath} alt="card-img" />
@@ -14,7 +14,13 @@ function ProjectCards({ imgPath, title, description, link }) {
         <Card.Text style={{ textAlign: "justify" }}>
           {description}
         </Card.Text>
-        <Button variant="primary" href={link} target="_blank">
+        {/* Skills Section */}
+        <div className="skills-container">
+          {skills.map((skill, index) => (
+            <span key={index} className="skill-button">{skill}</span>
+          ))}
+        </div>
+        <Button variant="primary" href={link} target="_blank" style={{ marginTop: '5px' }}>
           <BiLinkExternal /> &nbsp; View Project
         </Button>
       </Card.Body>
@@ -27,6 +33,7 @@ ProjectCards.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
+  skills: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default ProjectCards;

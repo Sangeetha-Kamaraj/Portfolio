@@ -1,5 +1,5 @@
-.project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+.project-card-view { 
+  box-shadow: 0 4px 5px rgba(119, 53, 136, 0.459) !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -11,7 +11,7 @@
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 4px rgba(129, 72, 144, 0.561) !important;
 }
 
 .project-card-view img {
@@ -20,4 +20,31 @@
 
 .project-card-view h3, .project-card-view p {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7) !important; /* Text shadow for better readability */
+}
+
+/* New styles for skills section */
+.skills-container {
+  margin-top: 10px;
+}
+
+.skill-button {
+  display: inline-block;
+  background-color: #47055af5; /* Bootstrap primary color */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.skill-button:hover {
+  background-color: #9500b3; /* Darker shade on hover */
+}
+
+.skills-container {
+  margin-top: 10px;
+  margin-bottom: 15px; /* Add space below the skills */
+  margin-left: -5px;
 }
