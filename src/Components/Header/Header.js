@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { AiFillStar, AiOutlineHome, AiOutlineUser, AiOutlineFundProjectionScreen, AiOutlineMessage } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
+import { FaLinkedinIn } from "react-icons/fa";
 
 function Header() {
   const [expand, setExpand] = useState(false);
@@ -41,7 +42,7 @@ function Header() {
                   as={Link} 
                   to={path} 
                   onClick={() => { setExpand(false); setActiveKey(path); }} 
-                  style={{ marginRight: '20px' }} // Adjust margin here
+                  style={{ marginRight: '20px' }}
                 >
                   {index === 0 && <AiOutlineHome className="icon" />}
                   {index === 1 && <AiOutlineUser className="icon" />}
@@ -56,16 +57,35 @@ function Header() {
                 </Nav.Link>
               </Nav.Item>
             ))}
+
+            {/* GitHub Fork Button with Star Icon */}
             <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/Sangeetha-Kamaraj"
                 target="_blank"
                 className="fork-btn-inner"
-                style={{ marginLeft: '20px' }} // Adjust margin here
+                style={{ display: "flex", alignItems: "center", marginLeft: '5px' }}
               >
-                <CgGitFork className="icon" /> <AiFillStar className="icon" />
+                <CgGitFork className="icon" style={{ fontSize: '1em', marginRight: '3px' }} />
+                <AiFillStar className="icon" style={{ fontSize: '1.2em', marginRight: '3px' }} />
+                
               </Button>
             </Nav.Item>
+
+            {/* LinkedIn Button with Custom Icon */}
+            <Nav.Item className="fork-btn">
+              <Button
+                href="http://www.linkedin.com/in/sangeetha-kamaraj"
+                target="_blank"
+                className="fork-btn-inner"
+                style={{ display: "flex", alignItems: "center", marginLeft: '5px' }}
+              >
+                <FaLinkedinIn className="icon" style={{ fontSize: '1em', marginRight: '3px' }} />
+                <AiFillStar className="icon" style={{ fontSize: '1.2em', marginRight: '3px' }} />
+              
+              </Button>
+            </Nav.Item>
+
           </Nav>
         </Navbar.Collapse>
       </Container>

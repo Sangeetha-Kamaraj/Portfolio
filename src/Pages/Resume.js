@@ -3,7 +3,6 @@ import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Components/Particles/Particle";
 import { AiOutlineDownload } from "react-icons/ai";
-import pdf from "../Assets/resume.pdf"; 
 
 function Resume() {
     const resumeContainerStyle = {
@@ -133,10 +132,16 @@ function Resume() {
 
             <Container>
                 <Row style={{ justifyContent: "center", position: "relative",marginTop: '20px'  }}>
-                    <Button variant="primary" href={pdf} target="_blank" download style={{ width: 'auto', padding: '10px 20px' }}>
+                <Button 
+                        variant="primary" 
+                        href="https://drive.google.com/drive/folders/19gRZB0KugQgEW-Sd7_FPeBKi2dC6pgje?usp=drive_link" 
+                        target="_blank" 
+                        style={{ width: 'auto', padding: '10px 20px' }}
+                    >
                         <AiOutlineDownload />
-                        &nbsp;Download CV
+                        &nbsp;View Resume
                     </Button>
+
                 </Row>
             </Container>
         </Container>

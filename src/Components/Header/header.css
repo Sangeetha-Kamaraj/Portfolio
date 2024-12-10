@@ -33,13 +33,39 @@
   background-color: rgba(255, 255, 255, 0.2); /* Background for active item */
   color: #ff0055; /* Active link color */
 }
-
+/* Button styling */
 .fork-btn-inner {
   background-color: #c8ce4c5e; /* Button background */
-  transition: background-color 0.3s ease; /* Smooth transition */
-  margin-left: 20px; /* Space between nav items and button */
+  color: white; /* Text color for button */
+  border: none; /* Remove default border */
+  padding: 8px 16px; /* Button padding */
+  display: flex;
+  align-items: center; /* Align icons and text vertically */
+  font-size: 1.2em; /* Font size for button text */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  border-radius: 4px; /* Rounded corners for button */
+  margin-left: 10px; /* Space between nav items and button */
 }
 
 .fork-btn-inner:hover {
   background-color: #ccd34d86; /* Button hover color */
+  cursor: pointer; /* Change cursor to indicate it's clickable */
 }
+
+/* Button text and icons styling */
+.fork-btn-inner .icon {
+  margin-right: 5px; /* Space between icon and text */
+  font-size: 1.3em; /* Set icon size */
+}
+
+.fork-btn-inner a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Ensure text color is consistent */
+}
+
+/* Optional: Styling for the button on focus (for better accessibility) */
+.fork-btn-inner:focus {
+  outline: none; /* Remove focus outline */
+  box-shadow: 0 0 10px rgba(204, 211, 77, 0.6); /* Add custom focus outline */
+}
+

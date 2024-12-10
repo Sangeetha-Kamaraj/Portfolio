@@ -1,11 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiFillInstagram,
-  AiOutlineWhatsApp,
-  AiOutlineMail,
-} from "react-icons/ai";
+import { AiFillGithub, AiOutlineWhatsApp, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Address() {
@@ -65,11 +60,6 @@ function Address() {
             <li style={{ margin: "0 10px" }}>
               <a href="https://wa.me/8778002883/" target="_blank" rel="noreferrer" title="WhatsApp">
                 <AiOutlineWhatsApp />
-              </a>
-            </li>
-            <li style={{ margin: "0 10px" }}>
-              <a href="https://www.instagram.com/sangeetha.kamaraj.73/" target="_blank" rel="noreferrer" title="Instagram Profile">
-                <AiFillInstagram />
               </a>
             </li>
           </ul>
